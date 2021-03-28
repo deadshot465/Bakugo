@@ -1,0 +1,7 @@
+version: '3'
+
+services: 
+    bakugo:
+            image: docker.pkg.github.com/deadshot465/bakugo/bakugo:latest
+            env_file:
+                - ./.env
