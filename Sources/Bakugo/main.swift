@@ -1,5 +1,8 @@
 import Foundation
 import Sword
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 let presences = ["僕のヒーローアカデミア", "デク", "クソ髪", "クソナード", "丸顔", "クソメガネ", "半分野郎", "アホ面"]
 let randomResponses = [
