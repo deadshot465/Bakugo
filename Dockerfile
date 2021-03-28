@@ -1,7 +1,8 @@
 FROM swift:latest
 WORKDIR /usr/src/app
 
-RUN apt-get update && apt-get install -y libssl-dev && apt-get autoremove
+RUN apt-get update && apt-get install -y libssl1.0-dev \
+ libssl1.0.0 && apt-get autoremove
 
 COPY . .
 CMD [ "swift", "run" ]
